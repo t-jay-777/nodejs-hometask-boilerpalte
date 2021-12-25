@@ -2,7 +2,6 @@ const { fighter } = require('../models/fighter');
 
 const createFighterValid = (req, res, next) => {
     // TODO: Implement validatior for fighter entity during creation
-    
     try{
         if(!req.body.health) {
             req.body.health = 100;
